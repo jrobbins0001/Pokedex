@@ -30,7 +30,7 @@ print "When you enter a Pokémon's # it will bring up all available information 
 time.sleep(5)
 print "Please enter a number between 1 and 151 to learn about the Pokémon associated to that number."
 time.sleep(0.5)
-print "Enter 0 for a random Pokémon"
+print "Enter 0 for a random Pokémon or Enter 999 to stop the program."
 
 Bulbasaur = """0001 Bulbasaur
             Type: Grass | Poison
@@ -825,20 +825,343 @@ Marowak = """0105 Marowak
           overcome its sadness at the loss of its mother 
           and grown tough. This Pokémon's tempered and 
           hardened spirit is not easily broken."""
-
-
-
-
-
-
-
-
-
-
-
-
-         
-         
+Hitmonlee = """0106 Hitmonlee
+            Type: Fighting 
+            The Kicking  Pokémon
+            Hitmonlee’s legs freely contract and stretch. 
+            Using these springlike legs, it bowls over 
+            foes with devastating kicks. After battle, 
+            it rubs down its legs and loosens the 
+            muscles to overcome fatigue."""
+Hitmochan = """0107 Hitmochan
+            Type: Fighting
+            The Punching Pokémon
+            Hitmonchan is said to possess the spirit of
+            a boxer who had been working toward a world 
+            championship. This Pokémon has an indomitable 
+            spirit and will never give up in the face of adversity."""
+Lickitung = """0108 Lickitung
+            Type: Normal
+            The Licking Pokémon
+            Whenever Lickitung comes across something new,
+            it will unfailingly give it a lick. It does so 
+            because it memorizes things by texture and by 
+            taste. It is somewhat put off by sour things."""
+Koffing = """0109 Koffing
+          Type: Poison
+          The Poison Gas Pokémon
+          Koffing embodies toxic substances. It mixes the 
+          toxins with raw garbage to set off a chemical 
+          reaction that results in a terribly powerful poison
+          gas. The higher the temperature, the more
+          gas is concocted by this Pokémon.
+          Evolves into Weezing."""
+Weezing = """0110 Weezing
+          Type: Poison 
+          The Poison Gas Pokémon
+          Weezing alternately shrinks and inflates its 
+          twin bodies to mix together toxic gases inside. 
+          The more the gases are mixed, the more powerful 
+          the toxins become. The Pokémon also becomes more putrid."""
+Rhyhorn = """0111 Rhyhorn
+          Type: Rock | Ground
+          The Spikes Pokémon
+          Rhyhorn’s brain is very small. It is so dense, 
+          while on a run it forgets why it started running 
+          in the first place. It apparently remembers 
+          sometimes if it demolishes something.
+          Evolves into Rhydon."""
+Rhydon = """0112 Rhydon
+         Type: Rock | Ground
+         The Drill Pokémon
+         Rhydon has a horn that serves as a drill. It is 
+         used for destroying rocks and boulders. This 
+         Pokémon occasionally rams into streams of magma, 
+         but the armor-like hide prevents it from feeling the heat."""
+Chansey = """0113 Chansey
+          Type: Normal 
+          The Egg Pokémon
+          Chansey lays nutritionally excellent eggs 
+          on an everyday basis. The eggs are so delicious,
+          they are easily and eagerly devoured by even those
+          people who have lost their appetite."""
+Tangela = """0114 Tangela
+          Type: Grass
+          The Vine Pokémon
+          Tangela’s vines snap off easily if they are grabbed.
+          This happens without pain, allowing it to make a
+          quick getaway. The lost vines are replaced by 
+          newly grown vines the very next day."""
+Kangaskan = """0115 Kangaskan
+            Type: Normal
+            The Parent Pokémon
+            If you come across a young Kangaskhan playing by
+            itself, you must never disturb it or attempt to 
+            catch it. The baby Pokémon’s parent is sure to 
+            be in the area, and it will become violently enraged at you."""
+Horsea = """0116 Horsea
+         Type: Water
+         The Dragon Pokémon
+         Horsea eats small insects and moss off of rocks. 
+         If the ocean current turns fast, this Pokémon anchors 
+         itself by wrapping its tail around rocks or 
+         coral to prevent being washed away.
+         Evolves into Seadra."""
+Seadra = """0117 Seadra
+         Type: Water
+         The Dragon Pokémon
+         Seadra sleeps after wriggling itself between the branches of
+         coral. Those trying to harvest coral are occasionally 
+         stung by this Pokémon’s poison barbs if they fail to notice it."""
+Goldeen = """0118 Goldeen
+          Type: Water
+          The Goldfish Pokémon
+          Goldeen is a very beautiful Pokémon with fins that
+          billow elegantly in water. However, don’t let your 
+          guard down around this Pokémon—it could 
+          ram you powerfully with its horn.
+          Evolves into Seaking."""
+Seaking = """0119 Seaking
+          Type: Water
+          The Goldfish Pokémon
+          In the autumn, Seaking males can be seen performing 
+          courtship dances in riverbeds to woo females. 
+          During this season, this Pokémon’s body 
+          coloration is at its most beautiful."""
+Staryu = """0120 Staryu
+         Type: Water
+         The Star Shape Pokémon
+         Staryu’s center section has an organ called the 
+         core that shines bright red. If you go to a beach
+         toward the end of summer, the glowing cores of 
+         these Pokémon look like the stars in the sky.
+         Evolves into Starmie."""
+Starmie = """0121 Starmie
+          Type: Water | Psychic
+          The Mysterious Pokémon
+          Starmie’s center section—the core—glows brightly
+          in seven colors. Because of its luminous nature, 
+          this Pokémon has been given the nickname The Gem Of The Sea."""
+Mr_Mime = """0122 Mr. Mime
+          Type: Psychic | Fairy
+          The Barrier Pokémon
+          Mr. Mime is a master of pantomime. Its gestures and 
+          motions convince watchers that something unseeable 
+          actually exists. Once the watchers are convinced, 
+          the unseeable thing exists as if it were real."""
+Scyther = """0123 Scyther
+          Type: Bug | Flying
+          The Mantis Pokémon
+          Scyther is blindingly fast. Its blazing speed 
+          enhances the effectiveness of the twin scythes 
+          on its forearms. This Pokémon’s scythes are so
+          effective, they can slice through thick logs 
+          in one wicked stroke."""
+Jynx = """0124 Jynx
+       Type: Ice | Psychic
+       The Human Shape Pokémon
+       Jynx walks rhythmically, swaying and shaking its 
+       hips as if it were dancing. Its motions are so 
+       bouncingly alluring, people seeing it are compelled
+       to shake their hips without giving any thought
+       to what they are doing."""
+Electabuzz = """0125 Electabuzz
+             Type: Electric
+             The Electric Pokémon
+             When a storm arrives, gangs of this Pokémon
+             compete with each other to scale heights that
+             are likely to be stricken by lightning bolts. 
+             Some towns use Electabuzz in place of lightning rods."""
+Magmar = """0126 Magmar
+         Type: Fire
+         The Spitfire Pokémon
+         In battle, Magmar blows out intensely hot flames 
+         from all over its body to intimidate its opponent. 
+         This Pokémon’s fiery bursts create heat waves that
+         ignite grass and trees in its surroundings."""
+Pinsir = """0127 Pinsir
+         Type: Bug
+         The Stag Beetle Pokémon
+         Pinsir has a pair of massive horns. Protruding 
+         from the surface of these horns are thorns. 
+         These thorns are driven deeply into the foe’s 
+         body when the pincer closes, making it tough 
+         for the foe to escape."""
+Tauros = """0128 Tauros
+         Type: Normal
+         The Wild Bull Pokémon
+         This Pokémon is not satisfied unless it is 
+         rampaging at all times. If there is no opponent 
+         for Tauros to battle, it will charge at thick 
+         trees and knock them down to calm itself."""
+Magikarp = """0129 Magikarp
+           Type: Water
+           The Fish Pokémon
+           Magikarp is a pathetic excuse for a Pokémon 
+           that is only capable of flopping and splashing. 
+           This behavior prompted scientists to 
+           undertake research into it.
+           Evolves into Gyrados."""
+Gyrados = """0130 Gyrados
+          Type: Water | Flying
+          The Atrocious Pokémon
+          When Magikarp evolves into Gyarados, its brain
+          cells undergo a structural transformation. It is
+          said that this transformation is to blame for
+          this Pokémon’s wildly violent nature."""
+Lapras = """0131 Lapras
+         Type: Water | Ice
+         The Transport Pokémon
+         People have driven Lapras almost to the point of
+         extinction. In the evenings, this Pokémon is 
+         said to sing plaintively as it seeks what few 
+         others of its kind still remain."""
+Ditto = """0132 Ditto
+        Type: Normal
+        The Transform Pokémon
+        Ditto rearranges its cell structure to transform
+        itself into other shapes. However, if it tries
+        to transform itself into something by relying
+        on its memory, this Pokémon manages to get details wrong."""
+Eevee = """0133 Eevee
+        Type: Normal
+        The Evolution Pokémon
+        Eevee has an unstable genetic makeup that suddenly mutates
+        due to the environment in which it lives. Radiation
+        from various stones causes this Pokémon to evolve.
+        Evolves into Vaporeon, Jolteon, and Flareon."""
+Vaporeon = """0134 Vaporeon
+           Type: Water
+           The Bubble Jet Pokémon
+           Vaporeon underwent a spontaneous mutation and grew
+           fins and gills that allow it to live underwater. 
+           This Pokémon has the ability to freely control water."""
+Jolteon = """0135 Jolteon
+          Type: Electric
+          The Lightning Pokémon
+          Jolteon’s cells generate a low level of electricity. 
+          This power is amplified by the static electricity of 
+          its fur, enabling the Pokémon to drop thunderbolts. 
+          The bristling fur is made of electrically charged needles."""
+Flareon = """0136 Flareon
+          Type: Fire 
+          The Flame Pokémon
+          Flareon’s fluffy fur has a functional purpose—it releases
+          heat into the air so that its body does not get
+          excessively hot. This Pokémon’s body temperature
+          can rise to a maximum of 1,650 degrees Fahrenheit."""
+Porygon = """0137 Porygon
+          Type: Normal
+          The Virtual Pokémon
+          Porygon is capable of reverting itself entirely
+          back to program data and entering cyberspace. 
+          This Pokémon is copy protected so it cannot 
+          be duplicated by copying."""
+Omanyte = """0138 Omanyte
+          Type: Rock | Water
+          The Spiral Pokémon
+          Omanyte is one of the ancient and long-since-extinct
+          Pokémon that have been regenerated from fossils
+          by people. If attacked by an enemy, it withdraws
+          itself inside its hard shell.
+          Evolves into Omastar."""
+Omastar = """0139 Omastar
+          Type: Rock | Water
+          The Spiral Pokémon
+          Omastar uses its tentacles to capture its prey. 
+          It is believed to have become extinct because 
+          its shell grew too large and heavy, causing 
+          its movements to become too slow and ponderous."""
+Kabuto = """0140 Kabuto
+         Type: Rock | Water
+         The Shellfish Pokémon
+         Kabuto is a Pokémon that has been regenerated
+         from a fossil. However, in extremely rare cases, 
+         living examples have been discovered. The Pokémon
+         has not changed at all for 300 million years.
+         Evolves into Kabutops."""
+Kabutops = """0141 Kabutops
+           Type: Rock | Water
+           The Shellfish Pokémon
+           Kabutops swam underwater to hunt for its prey
+           in ancient times. The Pokémon was apparently
+           evolving from being a water dweller to living
+           on land as evident from the beginnings of
+           change in its gills and legs."""
+Aerodactyl = """0142 Aerodactyl
+             Type: Flying | Rock
+             The Fossil Pokémon
+             Aerodactyl is a Pokémon from the age of 
+             dinosaurs. It was regenerated from genetic 
+             material extracted from amber. It is imagined
+             to have been the king of the skies in ancient times."""
+Snorlax = """0143 Snorlax
+          Type: Normal 
+          The Sleeping Pokémon
+          Snorlax’s typical day consists of nothing more 
+          than eating and sleeping. It is such a docile
+          Pokémon that there are children who use its
+          expansive belly as a place to play."""
+Articuno = """0144 Articuno 
+           Type: Ice | Flying
+           The Freeze Pokémon
+           Articuno is a legendary bird Pokémon that can 
+           control ice. The flapping of its wings chills
+           the air. As a result, it is said that when 
+           this Pokémon flies, snow will fall."""
+Zapdos = """0145 Zapdos
+         Type: Electric | Flying
+         The Electric Pokémon
+         Zapdos is a legendary bird Pokémon that has
+         the ability to control electricity. It usually
+         lives in thunderclouds. The Pokémon gains power
+         if it is stricken by lightning bolts."""
+Moltres = """0146 Moltres
+          Type: Fire | Flying
+          The Flame Pokémon
+          Moltres is a legendary bird Pokémon that has
+          the ability to control fire. If this Pokémon
+          is injured, it is said to dip its body in the
+          molten magma of a volcano to burn and heal itself."""
+Dratini = """0147 Dratini
+          Type: Dragon
+          The Dragon Pokémon
+          Dratini continually molts and sloughs off its 
+          old skin. It does so because the life energy within
+          its body steadily builds to reach uncontrollable levels.
+          Evolves into Dragonair."""
+Dragonair = """0148 Dragonair
+            Type: Dragon
+            The Dragon Pokémon
+            Dragonair stores an enormous amount of energy
+            inside its body. It is said to alter weather 
+            conditions in its vicinity by discharging 
+            energy from the crystals on its neck and tail.
+            Evolves into Dragonite."""
+Dragonite = """0149 Dragonite
+            Type: Dragon | Flying
+            The Dragon Pokémon
+            Dragonite is capable of circling the globe in
+            just 16 hours. It is a kindhearted Pokémon 
+            that leads lost and foundering ships in a
+            storm to the safety of land."""
+Mewtwo = """0150 Mewtwo
+         Type: Psychic
+         The Genetic Pokémon
+         Mewtwo is a Pokémon that was created by genetic
+         manipulation. However, even though the scientific
+         power of humans created this Pokémon’s body, they
+         failed to endow Mewtwo with a compassionate heart."""
+Mew = """0151 Mew
+      Type: Psychic
+      The New Species Pokémon
+      Mew is said to possess the genetic composition
+      of all Pokémon. It is capable of making itself
+      invisible at will, so it entirely avoids notice
+      even if it approaches people."""
+        
+        
+        
 def print_userpoke_details(userpoke):
   
     
@@ -1161,4 +1484,3 @@ while True:
         continue
     else:
         print_userpoke_details(userpoke)
-sys.exit(0)
